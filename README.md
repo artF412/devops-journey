@@ -15,3 +15,7 @@ Build hands-on skills in Linux, Docker, CI/CD, AWS, Terraform and monitoring.
 - [ ] Week 6: Terraform
 - [ ] Week 7: Monitoring and security
 - [ ] Week 8: Capstone project
+
+## Log
+- **2026-10-26**: Created the repo and wrote the goal and weekly plan.
+- **2026-10-28** (Week 1): Added [`lanlock`](week-01-linux/lanlock/), a Python script that locks the onboard LAN name to `lan1g` over SSH on many Debian hosts, so adding a PCIe network card does not break the network. It pins the name to the permanent MAC with a systemd `.link` file, updates `/etc/network`, rebuilds the initramfs, and can reboot and verify. Dry-run by default, with backups and a rollback procedure. The NIC selection logic has unit tests.
